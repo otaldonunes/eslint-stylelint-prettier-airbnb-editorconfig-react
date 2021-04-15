@@ -1,4 +1,4 @@
-**Apparently the official creator was no longer active in the community, so I decided to make this modified version. If you are interested in suggesting, contributing or implementing something, feel free to do a PR.** _(Credits at the end.)_
+**Apparently the official creator was no longer active in the community, so I decided to make this modified version. If you are interested in suggesting, contributing or implementing something, feel free to do a PR.** _(Credits at the end)_
 
 # Installation
 
@@ -8,17 +8,18 @@
    cd my-app
    ```
 
-2. Run this command inside your app's root directory. Note: this command executes the `eslint-prettier-config.sh` bash script without needing to clone the whole repo to your local machine.
+2. Run this command inside your app's root directory. _Note: this command executes the `automatic-config.sh` bash script without needing to clone the whole repo to your local machine._
 
    ```bash
    exec 3<&1;bash <&3 <(curl https://raw.githubusercontent.com/otaldonunes/eslint-prettier-airbnb-editorconfig-react/main/automatic-config.sh 2> /dev/null)
    ```
 
-3. Make selections for your preference of package manager (npm or yarn), file format (.js or .json), max-line size, and trailing commas (none, es5, all).
+3. Make selections for your preference of package manager (_npm or yarn_), file format (_.js or .json_), max-line size, and trailing commas (_none, es5, all_).
 
 4. Look in your project's root directory and notice the two newly added/updated config files:
    - `.eslintrc.js` (or `.eslintrc.json`)
    - `.prettierrc.js` (or `.prettierrc.json`)
+   - `.editorconfig`
 
 # Packages
 
@@ -26,6 +27,7 @@
 
 1. [ESlint](https://eslint.org/)
 2. [Prettier](https://prettier.io/)
+3. [EditorConfig](https://editorconfig.org/) _Note: For it to work, you need to install the `EditorConfig for VS Code` extension, it can be easily added by pressing (Ctrl + P), pasting the following command (ext install EditorConfig.EditorConfig), and pressing enter._
 
 ### Airbnb Configuration
 
