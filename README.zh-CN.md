@@ -2,6 +2,13 @@
 
 _如果您精通任何语言，并且想要帮助翻译自述文件或更正已完成的翻译，请单击[这](https://github.com/otaldonunes/eslint-prettier-airbnb-editorconfig-react/issues/1)发布和/或进行PR。_
 
+## 自述翻译
+
+-   [葡萄牙语](README.pt.md)
+-   [简体中文](README.zh-CN.md)
+-   [西班牙语](README.es.md)
+-   [法语](README.fr.md)
+
 # 安装
 
 1.  导航到要包含此样式配置的应用程序目录。
