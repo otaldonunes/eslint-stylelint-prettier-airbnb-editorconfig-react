@@ -1,5 +1,7 @@
 **Apparently the official creator was no longer active in the community, so I decided to make this modified version. If you are interested in suggesting, contributing or implementing something, feel free to do a PR.** _(Credits at the end)_
 
+*If you have mastered any language and want to help translating the readme or correcting the translations already done, click on [this](https://github.com/otaldonunes/eslint-prettier-airbnb-editorconfig-react/issues/1) issue and/or do a PR.*
+
 # Installation
 
 1. Navigate to your app directory where you want to include this style configuration.
