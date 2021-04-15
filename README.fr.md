@@ -2,6 +2,13 @@
 
 _Si vous maîtrisez une langue et souhaitez aider à traduire le readme ou à corriger les traductions déjà effectuées, cliquez sur[cette](https://github.com/otaldonunes/eslint-prettier-airbnb-editorconfig-react/issues/1)émettre et / ou faire un PR._
 
+## Traduction README
+
+-   [Portugais](README.pt.md)
+-   [Chinois simplifié](README.zh-CN.md)
+-   [Espanõl](README.es.md)
+-   [Française](README.fr.md)
+
 # Installation
 
 1.  Accédez au répertoire de votre application dans lequel vous souhaitez inclure cette configuration de style.
