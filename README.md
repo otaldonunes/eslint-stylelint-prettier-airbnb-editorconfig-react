@@ -19,7 +19,7 @@
 4. Look in your project's root directory and notice the two newly added/updated config files:
    - `.eslintrc.js` (or `.eslintrc.json`)
    - `.prettierrc.js` (or `.prettierrc.json`)
-   - `.editorconfig`
+   - `.editorconfig` (_Note: For it to work, you need to install the `EditorConfig for VS Code` extension, it can be easily added by pressing (Ctrl + P) in VS Code, pasting the following command (ext install EditorConfig.EditorConfig), and pressing enter._)
 
 # Packages
 
@@ -27,7 +27,6 @@
 
 1. [ESlint](https://eslint.org/)
 2. [Prettier](https://prettier.io/)
-3. [EditorConfig](https://editorconfig.org/) (_Note: For it to work, you need to install the `EditorConfig for VS Code` extension, it can be easily added by pressing (Ctrl + P), pasting the following command (ext install EditorConfig.EditorConfig), and pressing enter._)
 
 ### Airbnb Configuration
 
@@ -123,6 +122,5 @@ root = true
 
 ---
 
-This script was created by [Paulo Ramos](https://github.com/paulolramos),
-Inspired by Jeffrey Zhen's [tutorial](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a).
+This script was created by [Paulo Ramos](https://github.com/paulolramos), and inspired by Jeffrey Zhen's [tutorial](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a).
 Updated and modified with new features added by [Arthur Nunes](https://github.com/otaldonunes), [Martin Dobrev](https://github.com/RAMTO), [Darshan Gada](https://github.com/dr5hn) and [Imed Adel](https://github.com/ImedAdel/).
