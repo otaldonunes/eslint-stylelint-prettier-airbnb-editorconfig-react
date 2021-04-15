@@ -122,5 +122,4 @@ root = true
 
 ---
 
-This script was created by [Paulo Ramos](https://github.com/paulolramos), and inspired by Jeffrey Zhen's [tutorial](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a).
-Updated and modified with new features added by [Arthur Nunes](https://github.com/otaldonunes), [Martin Dobrev](https://github.com/RAMTO), [Darshan Gada](https://github.com/dr5hn) and [Imed Adel](https://github.com/ImedAdel/).
+This script was created by [Paulo Ramos](https://github.com/paulolramos), updated and modified with new features added by [Arthur Nunes](https://github.com/otaldonunes), [Martin Dobrev](https://github.com/RAMTO), [Darshan Gada](https://github.com/dr5hn), [Imed Adel](https://github.com/ImedAdel/). and inspired by Jeffrey Zhen's [tutorial](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a).
