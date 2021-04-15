@@ -1,5 +1,7 @@
 **Aparentemente, el creador oficial ya no estaba activo en la comunidad, así que decidí hacer esta versión modificada. Si está interesado en sugerir, contribuir o implementar algo, no dude en hacer un PR.**_(Créditos al final)_
 
+_Si domina algún idioma y desea ayudar a traducir el archivo Léame o corregir las traducciones ya realizadas, haga clic en[esto](https://github.com/otaldonunes/eslint-prettier-airbnb-editorconfig-react/issues/1)emitir y / o hacer un PR._
+
 # Instalación
 
 1.  Navegue hasta el directorio de su aplicación donde desea incluir esta configuración de estilo.
@@ -28,7 +30,7 @@
 1.  [ESlint](https://eslint.org/)
 2.  [Más bonita](https://prettier.io/)
 
-### Airbnb Configuration
+### Configuración de Airbnb
 
 1.  [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
     -   Este paquete proporciona .eslintrc de Airbnb como una configuración compartida extensible.
@@ -119,4 +121,4 @@ Una vez creados los archivos, puede editarlos a su gusto.
 
 * * *
 
-Este script fue creado por[Paulo Ramos](https://github.com/paulolramos), actualizado y modificado con nuevas funciones agregadas por[Arthur Nunes](https://github.com/otaldonunes),[Martín Dobrev](https://github.com/RAMTO),[Visita](https://github.com/dr5hn),[Justicia bautizada](https://github.com/ImedAdel/). e inspirado por Jeffrey Zhen's[tutorial](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a).
+Este script fue creado por[Paulo Ramos](https://github.com/paulolramos), actualizado y modificado con nuevas funciones agregadas por[Arthur Nunes](https://github.com/otaldonunes),[Martín Dobrev](https://github.com/RAMTO),[Visualización](https://github.com/dr5hn),[Justicia bautizada](https://github.com/ImedAdel/). e inspirado por Jeffrey Zhen's[tutorial](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a).
