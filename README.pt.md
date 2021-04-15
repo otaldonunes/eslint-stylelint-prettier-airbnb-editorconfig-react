@@ -2,6 +2,13 @@
 
 _Se você já domina algum idioma e deseja ajudar na tradução do readme ou na correção das traduções já feitas, clique em[esta](https://github.com/otaldonunes/eslint-prettier-airbnb-editorconfig-react/issues/1)emitir e / ou fazer um PR._
 
+## README Translation
+
+-   [Português](README.pt.md)
+-   [Chinês simplificado](README.zh-CN.md)
+-   [Espanõl](README.es.md)
+-   [francês](README.fr.md)
+
 # Instalação
 
 1.  Navegue até o diretório do seu aplicativo onde deseja incluir esta configuração de estilo.
@@ -34,7 +41,7 @@ _Se você já domina algum idioma e deseja ajudar na tradução do readme ou na 
 
 1.  [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
     -   Este pacote fornece .eslintrc do Airbnb como uma configuração compartilhada extensível.
-2.  [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y)(Dependência Par)
+2.  [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y) (Peer Dependency)
     -   Verificador estático de AST para regras de acessibilidade em elementos JSX.
 3.  [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react)(Dependência Par)
     -   Reaja as regras de linting específicas para ESLint
