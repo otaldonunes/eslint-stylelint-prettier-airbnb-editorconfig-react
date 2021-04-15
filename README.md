@@ -1,8 +1,9 @@
 **Apparently the official creator was no longer active in the community, so I decided to make this modified version. If you are interested in suggesting, contributing or implementing something, feel free to do a PR.** _(Credits at the end)_
 
-*If you have mastered any language and want to help translating the readme or correcting the translations already done, click on [this](https://github.com/otaldonunes/eslint-prettier-airbnb-editorconfig-react/issues/1) issue and/or do a PR.*
+_If you have mastered any language and want to help translating the readme or correcting the translations already done, click on [this](https://github.com/otaldonunes/eslint-prettier-airbnb-editorconfig-react/issues/1) issue and/or do a PR._
 
 ## README Translation
+
 - [Português](README.pt.md)
 - [简体中文](README.zh-CN.md)
 - [Espanõl](README.es.md)
@@ -25,9 +26,9 @@
 3. Make selections for your preference of package manager (_Npm, Yarn or Yarn Workspaces_), file format (_.js or .json_), max-line size, and trailing commas (_none, es5, all_).
 
 4. Look in your project's root directory and notice the two newly added/updated config files:
-   - `.eslintrc.js` (or `.eslintrc.json`)
-   - `.prettierrc.js` (or `.prettierrc.json`)
-   - `.editorconfig` (_Note: For it to work, you need to install the `EditorConfig for VS Code` extension, it can be easily added by pressing (Ctrl + P) in VS Code, pasting the following command (ext install EditorConfig.EditorConfig), and pressing enter._)
+   - `.eslintrc.js` (or `.eslintrc.json`) (_Install the `ESLint` extension, it can be easily added by pressing (Ctrl + P) in VS Code, pasting the following command (ext install ext install dbaeumer.vscode-eslint), and pressing enter._)
+   - `.prettierrc.js` (or `.prettierrc.json`) (_Install the `Prettier - Code formatter` extension, it can be easily added by pressing (Ctrl + P) in VS Code, pasting the following command (ext install esbenp.prettier-vscode), and pressing enter._)
+   - `.editorconfig` (_Install the `EditorConfig for VS Code` extension, it can be easily added by pressing (Ctrl + P) in VS Code, pasting the following command (ext install EditorConfig.EditorConfig), and pressing enter._)
 
 # Packages
 
