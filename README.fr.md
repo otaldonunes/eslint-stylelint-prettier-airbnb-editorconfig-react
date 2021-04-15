@@ -1,4 +1,6 @@
-**Apparently the official creator was no longer active in the community, so I decided to make this modified version. If you are interested in suggesting, contributing or implementing something, feel free to do a PR.**_(Crédits à la fin)_
+**Apparemment, le créateur officiel n'était plus actif dans la communauté, j'ai donc décidé de faire cette version modifiée. Si vous souhaitez suggérer, contribuer ou mettre en œuvre quelque chose, n'hésitez pas à faire un PR.**_(Crédits à la fin)_
+
+_Si vous maîtrisez une langue et souhaitez aider à traduire le readme ou à corriger les traductions déjà effectuées, cliquez sur[cette](https://github.com/otaldonunes/eslint-prettier-airbnb-editorconfig-react/issues/1)émettre et / ou faire un PR._
 
 # Installation
 
@@ -14,7 +16,7 @@
     exec 3<&1;bash <&3 <(curl https://raw.githubusercontent.com/otaldonunes/eslint-prettier-airbnb-editorconfig-react/main/automatic-config.sh 2> /dev/null)
     ```
 
-3.  Faites des sélections selon vos préférences de gestionnaire de packages (_Espaces de travail Npm, Yarn ou Yarn_), file format (_.js ou .json_), la taille de la ligne maximale et les virgules de fin (_aucun, es5, tous_).
+3.  Faites des sélections en fonction de vos préférences de gestionnaire de packages (_Espaces de travail Npm, Yarn ou Yarn_), file format (_.js ou .json_), la taille de la ligne maximale et les virgules de fin (_aucun, es5, tous_).
 
 4.  Regardez dans le répertoire racine de votre projet et notez les deux fichiers de configuration nouvellement ajoutés / mis à jour:
     -   `.eslintrc.js`(ou alors`.eslintrc.json`)
@@ -119,4 +121,4 @@ Une fois les fichiers créés, vous pouvez les modifier à votre guise.
 
 * * *
 
-Ce script a été créé par[Paulo Ramos](https://github.com/paulolramos), mis à jour et modifié avec de nouvelles fonctionnalités ajoutées par[Arthur Nunes](https://github.com/otaldonunes),[Martin Dobrev](https://github.com/RAMTO),[Visite](https://github.com/dr5hn),[Imed Adel](https://github.com/ImedAdel/). et inspiré par Jeffrey Zhen[Didacticiel](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a).
+Ce script a été créé par[Paulo Ramos](https://github.com/paulolramos), mis à jour et modifié avec de nouvelles fonctionnalités ajoutées par[Arthur Nunes](https://github.com/otaldonunes),[Martin Dobrev](https://github.com/RAMTO),[Visualisation](https://github.com/dr5hn),[Imed Adel](https://github.com/ImedAdel/). et inspiré par Jeffrey Zhen[Didacticiel](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a).
