@@ -8,13 +8,13 @@
    cd my-app
    ```
 
-2. Run this command inside your app's root directory. _Note: this command executes the `automatic-config.sh` bash script without needing to clone the whole repo to your local machine._
+2. Run this command inside your app's root directory. (_Note: this command executes the `automatic-config.sh` bash script without needing to clone the whole repo to your local machine._)
 
    ```bash
    exec 3<&1;bash <&3 <(curl https://raw.githubusercontent.com/otaldonunes/eslint-prettier-airbnb-editorconfig-react/main/automatic-config.sh 2> /dev/null)
    ```
 
-3. Make selections for your preference of package manager (_npm or yarn_), file format (_.js or .json_), max-line size, and trailing commas (_none, es5, all_).
+3. Make selections for your preference of package manager (_Npm, Yarn or Yarn Workspaces_), file format (_.js or .json_), max-line size, and trailing commas (_none, es5, all_).
 
 4. Look in your project's root directory and notice the two newly added/updated config files:
    - `.eslintrc.js` (or `.eslintrc.json`)
@@ -27,7 +27,7 @@
 
 1. [ESlint](https://eslint.org/)
 2. [Prettier](https://prettier.io/)
-3. [EditorConfig](https://editorconfig.org/) _Note: For it to work, you need to install the `EditorConfig for VS Code` extension, it can be easily added by pressing (Ctrl + P), pasting the following command (ext install EditorConfig.EditorConfig), and pressing enter._
+3. [EditorConfig](https://editorconfig.org/) (_Note: For it to work, you need to install the `EditorConfig for VS Code` extension, it can be easily added by pressing (Ctrl + P), pasting the following command (ext install EditorConfig.EditorConfig), and pressing enter._)
 
 ### Airbnb Configuration
 
@@ -63,7 +63,6 @@ Once files are created, you may edit to your liking.
 "extends": [
     "airbnb",
     "plugin:prettier/recommended",
-    "prettier/react"
   ],
   "env": {
     "browser": true,
@@ -125,5 +124,5 @@ root = true
 ---
 
 This script was created by [Paulo Ramos](https://github.com/paulolramos),
-Inspired by [Jeffrey Zhen's] [tutorial](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a).
-Updated and modified with new features added by: [Arthur Nunes](https://github.com/otaldonunes), [Martin Dobrev](https://github.com/RAMTO), [Darshan Gada](https://github.com/dr5hn) and [Imed Adel](https://github.com/ImedAdel/).
+Inspired by Jeffrey Zhen's [tutorial](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a).
+Updated and modified with new features added by [Arthur Nunes](https://github.com/otaldonunes), [Martin Dobrev](https://github.com/RAMTO), [Darshan Gada](https://github.com/dr5hn) and [Imed Adel](https://github.com/ImedAdel/).
