@@ -1,5 +1,7 @@
 **显然，官方创建者已不再活跃于社区中，因此我决定制作此修改版本。如果您对建议，贡献或实施感兴趣，请随时进行PR。**_（末尾的积分）_
 
+_如果您精通任何语言，并且想要帮助翻译自述文件或更正已完成的翻译，请单击[这](https://github.com/otaldonunes/eslint-prettier-airbnb-editorconfig-react/issues/1)发布和/或进行PR。_
+
 # 安装
 
 1.  导航到要包含此样式配置的应用程序目录。
@@ -119,4 +121,4 @@
 
 * * *
 
-该脚本是由创建的[保罗·拉莫斯（Paulo Ramos）](https://github.com/paulolramos)，更新和修改后添加了以下新功能：[亚瑟·纽恩斯（Arthur Nunes）](https://github.com/otaldonunes),[马丁·杜波夫（Martin Dobrev）](https://github.com/RAMTO),[访问](https://github.com/dr5hn),[受洗的正义](https://github.com/ImedAdel/)。并受到Jeffrey Zhen的启发[教程](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a).
+该脚本是由创建的[保罗·拉莫斯（Paulo Ramos）](https://github.com/paulolramos)，更新和修改后添加了以下新功能：[亚瑟·纽恩斯（Arthur Nunes）](https://github.com/otaldonunes),[马丁·杜波夫（Martin Dobrev）](https://github.com/RAMTO),[可视化](https://github.com/dr5hn),[受洗的正义](https://github.com/ImedAdel/)。并受到Jeffrey Zhen的启发[教程](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a).
