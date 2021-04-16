@@ -25,10 +25,11 @@ _If you have mastered any language and want to help translating the readme or co
 
 3. Make selections for your preference of package manager (_Npm, Yarn or Yarn Workspaces_), file format (_.js or .json_), max-line size, and trailing commas (_none, es5, all_).
 
-4. Look in your project's root directory and notice the two newly added/updated config files:
-   - `.eslintrc.js` (or `.eslintrc.json`) (_Install the `ESLint` extension, it can be easily added by pressing (Ctrl + P) in VS Code, pasting the following command (ext install ext install dbaeumer.vscode-eslint), and pressing enter._)
-   - `.prettierrc.js` (or `.prettierrc.json`) (_Install the `Prettier - Code formatter` extension, it can be easily added by pressing (Ctrl + P) in VS Code, pasting the following command (ext install esbenp.prettier-vscode), and pressing enter._)
-   - `.editorconfig` (_Install the `EditorConfig for VS Code` extension, it can be easily added by pressing (Ctrl + P) in VS Code, pasting the following command (ext install EditorConfig.EditorConfig), and pressing enter._)
+4. Look in your project's root directory and notice the four newly added/updated config files:
+   - `.eslintrc.js` (or `.eslintrc.json`) (_Install the `ESLint` extension, it can be easily added by pressing (Ctrl + P) in VS Code, pasting the following command (`ext install ext install dbaeumer.vscode-eslint`), and pressing enter._)
+   - `.prettierrc.js` (or `.prettierrc.json`) (_Install the `Prettier - Code formatter` extension, it can be easily added by pressing (Ctrl + P) in VS Code, pasting the following command (`ext install esbenp.prettier-vscode`), and pressing enter._)
+   - `.stylelintrc` (_Install the `stylelint` extension, it can be easily added by pressing (Ctrl + P) in VS Code, pasting the following command (`ext install stylelint.vscode-stylelint`), and pressing enter._)
+   - `.editorconfig` (_Install the `EditorConfig for VS Code` extension, it can be easily added by pressing (Ctrl + P) in VS Code, pasting the following command (`ext install EditorConfig.EditorConfig`), and pressing enter._)
 
 # Packages
 
@@ -36,6 +37,7 @@ _If you have mastered any language and want to help translating the readme or co
 
 1. [ESlint](https://eslint.org/)
 2. [Prettier](https://prettier.io/)
+3. [Stylelint](https://stylelint.io/)
 
 ### Airbnb Configuration
 
@@ -45,9 +47,13 @@ _If you have mastered any language and want to help translating the readme or co
    - Static AST checker for accessibility rules on JSX elements.
 3. [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) (Peer Dependency)
    - React specific linting rules for ESLint
-4. [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) (Peer Dependency)
+4. [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
    - Support linting of ES2015+ (ES6+) import/export syntax, and prevent issues with misspelling of file paths and import names.
-5. [babel-eslint](https://github.com/babel/babel-eslint)
+5. [stylelint-config-airbnb](https://www.npmjs.com/package/stylelint-config-airbnb)
+   - This package provides Airbnb's .stylelintrc as an extensible shared config.
+6. [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+   - This package provides the Rules of Hooks.
+7. [babel-eslint](https://github.com/babel/babel-eslint)
    - A wrapper for Babel's parser used for ESLint.
    - We decided to include this since [Airbnb Style Guide uses Babel](https://github.com/airbnb/javascript#airbnb-javascript-style-guide-).
 
@@ -55,8 +61,14 @@ _If you have mastered any language and want to help translating the readme or co
 
 1. [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
    - Runs Prettier as an ESLint rule and reports differences as individual ESLint issues.
-2. [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
+2. [stylelint-prettier](https://www.npmjs.com/package/stylelint-prettier)
+   - Runs Prettier as a Stylelint rule and reports differences as individual Stylelint issues.
+3. [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
    - Turns off all rules that are unnecessary or might conflict with Prettier.
+4. [stylelint-config-prettier](https://www.npmjs.com/package/stylelint-config-prettier)
+   - Turns off all rules that are unnecessary or might conflict with Prettier.
+5. [eslint-plugin-html](https://www.npmjs.com/package/eslint-plugin-html)
+   - A ESLint plugin to lint and fix inline scripts contained in HTML files.
 
 # Created Configuration Files
 
@@ -109,6 +121,16 @@ Once files are created, you may edit to your liking.
   "printWidth": (SET BY USER),
   "singleQuote": true,
   "trailingComma": (SET BY USER)
+}
+```
+
+### stylelintrc(.js/.json)
+
+- [more Info](https://stylelint.io/user-guide/configure)
+
+```
+{
+  "extends": ["stylelint-prettier/recommended", "stylelint-config-airbnb"]
 }
 ```
 
