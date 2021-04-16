@@ -25,10 +25,11 @@ _Si domina algún idioma y desea ayudar a traducir el archivo Léame o corregir 
 
 3.  Realice selecciones según sus preferencias de administrador de paquetes (_Espacios de trabajo de Npm, Yarn o Yarn_), formato de archivo (_.js o .json_), tamaño máximo de línea y comas finales (_ninguno, es5, todos_).
 
-4.  Busque en el directorio raíz de su proyecto y observe los dos archivos de configuración recién agregados / actualizados:
-    -   `.eslintrc.js`(o`.eslintrc.json`)
-    -   `.prettierrc.js`(o`.prettierrc.json`)
-    -   `.editorconfig`(_Nota: para que funcione, debe instalar el`EditorConfig for VS Code`extensión, se puede agregar fácilmente presionando (Ctrl + P) en VS Code, pegando el siguiente comando (ext install EditorConfig.EditorConfig) y presionando enter._)
+4.  Busque en el directorio raíz de su proyecto y observe los cuatro archivos de configuración recién agregados / actualizados:
+    -   `.eslintrc.js`(o`.eslintrc.json`) (_Instala el`ESLint`extensión, se puede agregar fácilmente presionando (Ctrl + P) en VS Code, pegando el siguiente comando (`ext install ext install dbaeumer.vscode-eslint`) y presionando enter._)
+    -   `.prettierrc.js`(o`.prettierrc.json`) (_Instala el`Prettier - Code formatter`extensión, se puede agregar fácilmente presionando (Ctrl + P) en VS Code, pegando el siguiente comando (`ext install esbenp.prettier-vscode`) y presionando enter._)
+    -   `.stylelintrc`(_Instala el`stylelint`extensión, se puede agregar fácilmente presionando (Ctrl + P) en VS Code, pegando el siguiente comando (`ext install stylelint.vscode-stylelint`) y presionando enter._)
+    -   `.editorconfig`(_Instala el`EditorConfig for VS Code`extensión, se puede agregar fácilmente presionando (Ctrl + P) en VS Code, pegando el siguiente comando (`ext install EditorConfig.EditorConfig`) y presionando enter._)
 
 # Paquetes
 
@@ -36,6 +37,7 @@ _Si domina algún idioma y desea ayudar a traducir el archivo Léame o corregir 
 
 1.  [ESlint](https://eslint.org/)
 2.  [Más bonita](https://prettier.io/)
+3.  [Stylelint](https://stylelint.io/)
 
 ### Configuración de Airbnb
 
@@ -45,9 +47,13 @@ _Si domina algún idioma y desea ayudar a traducir el archivo Léame o corregir 
     -   Verificador AST estático para reglas de accesibilidad en elementos JSX.
 3.  [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react)(Dependencia de pares)
     -   Reaccionar reglas de pelusa específicas para ESLint
-4.  [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)(Dependencia de pares)
+4.  [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
     -   Admite la sintaxis de importación / exportación de ES2015 + (ES6 +) y evita problemas con errores ortográficos en las rutas de archivo y los nombres de importación.
-5.  [babel-eslint](https://github.com/babel/babel-eslint)
+5.  [stylelint-config-airbnb](https://www.npmjs.com/package/stylelint-config-airbnb)
+    -   Este paquete proporciona .stylelintrc de Airbnb como una configuración compartida extensible.
+6.  [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+    -   Este paquete proporciona las Reglas de Hooks.
+7.  [babel-eslint](https://github.com/babel/babel-eslint)
     -   Un contenedor para el analizador de Babel utilizado para ESLint.
     -   Decidimos incluir esto ya que[La guía de estilo de Airbnb usa Babel](https://github.com/airbnb/javascript#airbnb-javascript-style-guide-).
 
@@ -55,8 +61,14 @@ _Si domina algún idioma y desea ayudar a traducir el archivo Léame o corregir 
 
 1.  [eslint-plugin-más bonito](https://github.com/prettier/eslint-plugin-prettier)
     -   Se ejecuta Prettier como una regla de ESLint e informa las diferencias como problemas individuales de ESLint.
-2.  [eslint-config-más bonito](https://github.com/prettier/eslint-config-prettier)
+2.  [estilizado-más bonito](https://www.npmjs.com/package/stylelint-prettier)
+    -   Se ejecuta Prettier como una regla de Stylelint e informa las diferencias como problemas individuales de Stylelint.
+3.  [eslint-config-más bonito](https://github.com/prettier/eslint-config-prettier)
     -   Desactiva todas las reglas que son innecesarias o que pueden entrar en conflicto con Prettier.
+4.  [stylelint-config-más bonito](https://www.npmjs.com/package/stylelint-config-prettier)
+    -   Desactiva todas las reglas que son innecesarias o que pueden entrar en conflicto con Prettier.
+5.  [eslint-plugin-html](https://www.npmjs.com/package/eslint-plugin-html)
+    -   Un complemento de ESLint para eliminar y corregir scripts en línea contenidos en archivos HTML.
 
 # Archivos de configuración creados
 
@@ -108,6 +120,15 @@ Una vez creados los archivos, puede editarlos a su gusto.
       "printWidth": (SET BY USER),
       "singleQuote": true,
       "trailingComma": (SET BY USER)
+    }
+
+### stylelintrc (.js / .json)
+
+-   [más información](https://stylelint.io/user-guide/configure)
+
+
+    {
+      "extends": ["stylelint-prettier/recommended", "stylelint-config-airbnb"]
     }
 
 ### .editorconfig
