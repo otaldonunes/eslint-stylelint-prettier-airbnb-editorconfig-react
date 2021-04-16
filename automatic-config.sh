@@ -19,7 +19,7 @@ echo "Which package manager are you using?"
 select package_command_choices in "Yarn" "Yarn Workspaces" "npm" "Cancel"; do
   case $package_command_choices in
     Yarn ) pkg_cmd='yarn add'; break;;
-    Yarn Workspaces ) pkg_cmd='yarn add -W'; break;;
+    "Yarn Workspaces" ) pkg_cmd='yarn add -W'; break;;
     npm ) pkg_cmd='npm install'; break;;
     Cancel ) exit;;
   esac
