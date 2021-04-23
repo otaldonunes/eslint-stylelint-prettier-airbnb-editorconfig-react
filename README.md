@@ -20,7 +20,7 @@ _If you have mastered any language and want to help translating the readme or co
 2. Run this command inside your app's root directory. (_Note: this command executes the `automatic-config.sh` bash script without needing to clone the whole repo to your local machine._)
 
    ```bash
-   exec 3<&1;bash <&3 <(curl https://raw.githubusercontent.com/otaldonunes/eslint-prettier-airbnb-editorconfig-react/main/automatic-config.sh 2> /dev/null)
+   exec 3<&1;bash <&3 <(curl https://raw.githubusercontent.com/otaldonunes/eslint-stylelint-prettier-airbnb-editorconfig-react/main/automatic-config.sh 2> /dev/null)
    ```
 
 3. Make selections for your preference of package manager (_Npm, Yarn or Yarn Workspaces_), file format (_.js or .json_), max-line size, and trailing commas (_none, es5, all_).
@@ -66,9 +66,15 @@ _If you have mastered any language and want to help translating the readme or co
 3. [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
    - Turns off all rules that are unnecessary or might conflict with Prettier.
 4. [stylelint-config-prettier](https://www.npmjs.com/package/stylelint-config-prettier)
+
    - Turns off all rules that are unnecessary or might conflict with Prettier.
-5. [eslint-plugin-html](https://www.npmjs.com/package/eslint-plugin-html)
+
+### Others
+
+1. [eslint-plugin-html](https://www.npmjs.com/package/eslint-plugin-html)
    - A ESLint plugin to lint and fix inline scripts contained in HTML files.
+2. [eslint-plugin-jest](https://www.npmjs.com/package/stylelint-prettier)
+   - ESLint plugin for Jest.
 
 # Created Configuration Files
 

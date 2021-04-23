@@ -116,33 +116,38 @@ echo
 echo -e "${GREEN}Configuring your development environment... ${NC}"
 
 echo
-echo -e "1/7 ${LCYAN}ESLint/Prettier/Stylelint Installation... ${NC}"
+echo -e "1/8 ${LCYAN}ESLint/Prettier/Stylelint Installation... ${NC}"
 echo
 $pkg_cmd -D eslint prettier stylelint
 
 echo
-echo -e "2/7 ${YELLOW}Conforming to Airbnb's JavaScript/CSS Style Guide... ${NC}"
+echo -e "2/8 ${LCYAN}Conforming to Airbnb's JavaScript/CSS Style Guide... ${NC}"
 echo
 $pkg_cmd -D eslint-config-airbnb stylelint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-import eslint-plugin-react babel-eslint eslint-plugin-react-hooks
 
 echo
-echo -e "3/7 ${LCYAN}Making ESlint/Stylelint and Prettier play nice with each other... ${NC}"
+echo -e "3/8 ${LCYAN}Making ESlint/Stylelint and Prettier play nice with each other... ${NC}"
 echo "See https://github.com/prettier/eslint-config-prettier for more details."
 echo
-$pkg_cmd -D eslint-config-prettier eslint-plugin-prettier eslint-plugin-html stylelint-config-prettier stylelint-prettier
+$pkg_cmd -D eslint-plugin-prettier stylelint-prettier stylelint-config-prettier eslint-config-prettier
 
+echo
+echo -e "4/8 ${LCYAN}Others Plugins Installation... ${NC}"
+echo
+$pkg_cmd -D eslint-plugin-html eslint-plugin-jest
 
 if [ "$skip_eslint_setup" == "true" ]; then
   break
 else
   echo
-  echo -e "4/7 ${YELLOW}Building your .eslintrc${config_extension} file...${NC}"
+  echo -e "5/8 ${YELLOW}Building your .eslintrc${config_extension} file...${NC}"
   > ".eslintrc${config_extension}" # truncates existing file (or creates empty)
 
   echo ${config_opening}'
   "extends": [
     "airbnb",
-    "plugin:prettier/recommended",
+    "plugin:jest/recommended",
+    "prettier"
   ],
   "plugins": ["html"],
   "env": {
@@ -177,7 +182,7 @@ fi
 if [ "$skip_prettier_setup" == "true" ]; then
   break
 else
-  echo -e "5/7 ${YELLOW}Building your .prettierrc${config_extension} file... ${NC}"
+  echo -e "6/8 ${YELLOW}Building your .prettierrc${config_extension} file... ${NC}"
   > .prettierrc${config_extension} # truncates existing file (or creates empty)
 
   echo ${config_opening}'
@@ -192,7 +197,7 @@ if [ "$skip_stylelint_setup" == "true" ]; then
   break
 else
   echo
-  echo -e "6/7 ${YELLOW}Building your .stylelintrc${config_extension} file...${NC}"
+  echo -e "7/8 ${YELLOW}Building your .stylelintrc${config_extension} file...${NC}"
   > ".stylelintrc${config_extension}" # truncates existing file (or creates empty)
 
   echo ${config_opening}'
@@ -200,7 +205,7 @@ else
 }' >> .stylelintrc${config_extension}
 fi
 
-echo -e "7/7 ${YELLOW}Building your .editorconfig file... ${NC}"
+echo -e "8/8 ${YELLOW}Building your .editorconfig file... ${NC}"
   > .editorconfig # truncates existing file (or creates empty)
 
   echo '
