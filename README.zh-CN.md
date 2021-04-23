@@ -20,22 +20,24 @@ _如果您精通任何语言，并且想要帮助翻译自述文件或更正已�
 2.  在您应用的根目录中运行此命令。 （_注意：此命令执行`automatic-config.sh`bash脚本，而无需将整个存储库克隆到本地计算机。_)
 
     ```bash
-    exec 3<&1;bash <&3 <(curl https://raw.githubusercontent.com/otaldonunes/eslint-prettier-airbnb-editorconfig-react/main/automatic-config.sh 2> /dev/null)
+    exec 3<&1;bash <&3 <(curl https://raw.githubusercontent.com/otaldonunes/eslint-stylelint-prettier-airbnb-editorconfig-react/main/automatic-config.sh 2> /dev/null)
     ```
 
 3.  根据您对程序包管理器的偏好进行选择（_Npm，纱线或纱线工作区_）， 文件格式 （_.js或.json_），最大行大小和尾随逗号（_没有，es5，全部_).
 
-4.  查看项目的根目录，并注意两个新添加/更新的配置文件：
-    -   `.eslintrc.js`（或者`.eslintrc.json`)
-    -   `.prettierrc.js`（或者`.prettierrc.json`)
-    -   `.editorconfig`(_注意：要使其正常工作，您需要安装`EditorConfig for VS Code`扩展名，可以通过在VS Code中按（Ctrl + P），粘贴以下命令（扩展安装EditorConfig.EditorConfig）并按Enter来轻松添加。_)
+4.  查看项目的根目录，并注意四个新添加/更新的配置文件：
+    -   `.eslintrc.js`（或者`.eslintrc.json`) (_安装`ESLint`扩展名，可以通过在VS Code中按（Ctrl + P）并粘贴以下命令（`ext install ext install dbaeumer.vscode-eslint`），然后按Enter。_)
+    -   `.prettierrc.js`（或者`.prettierrc.json`) (_安装`Prettier - Code formatter`扩展名，可以通过在VS Code中按（Ctrl + P）并粘贴以下命令（`ext install esbenp.prettier-vscode`），然后按Enter。_)
+    -   `.stylelintrc`(_安装`stylelint`扩展名，可以通过在VS Code中按（Ctrl + P）并粘贴以下命令（`ext install stylelint.vscode-stylelint`），然后按Enter。_)
+    -   `.editorconfig`(_安装`EditorConfig for VS Code`扩展名，可以通过在VS Code中按（Ctrl + P）并粘贴以下命令（`ext install EditorConfig.EditorConfig`），然后按Enter。_)
 
 # 配套
 
 ### 主要包装
 
 1.  [ESlint](https://eslint.org/)
-2.  [更漂亮](https://prettier.io/)
+2.  [Prettier](https://prettier.io/)
+3.  [Stylelint](https://stylelint.io/)
 
 ### Airbnb配置
 
@@ -45,9 +47,13 @@ _如果您精通任何语言，并且想要帮助翻译自述文件或更正已�
     -   静态AST检查器，用于JSX元素上的可访问性规则。
 3.  [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react)（对等依赖）
     -   对ESLint的特定掉毛规则做出反应
-4.  [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)（对等依赖）
+4.  [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
     -   支持lint ES2015 +（ES6 +）导入/导出语法，并防止文件路径和导入名称拼写错误的问题。
-5.  [巴别·埃斯林特](https://github.com/babel/babel-eslint)
+5.  [stylelint-config-airbnb](https://www.npmjs.com/package/stylelint-config-airbnb)
+    -   该软件包提供了Airbnb的.stylelintrc作为可扩展的共享配置。
+6.  [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+    -   该软件包提供了挂钩规则。
+7.  [巴别·埃斯林特](https://github.com/babel/babel-eslint)
     -   用于ESLint的Babel解析器的包装。
     -   我们决定将其包括在内，因为[Airbnb风格指南使用Babel](https://github.com/airbnb/javascript#airbnb-javascript-style-guide-).
 
@@ -55,8 +61,20 @@ _如果您精通任何语言，并且想要帮助翻译自述文件或更正已�
 
 1.  [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
     -   将Prettier作为ESLint规则运行，并将差异报告为单个ESLint问题。
-2.  [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
+2.  [风格更漂亮](https://www.npmjs.com/package/stylelint-prettier)
+    -   将Prettier作为Stylelint规则运行，并报告差异作为单个Stylelint问题。
+3.  [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
     -   关闭所有不必要的或可能与Prettier冲突的规则。
+4.  [stylelint-config-prettier](https://www.npmjs.com/package/stylelint-config-prettier)
+
+    -   关闭所有不必要的或可能与Prettier冲突的规则。
+
+### 其他
+
+1.  [eslint-plugin-html](https://www.npmjs.com/package/eslint-plugin-html)
+    -   一个ESLint插件，用于对HTML文件中包含的内联脚本进行整理和修复。
+2.  [埃斯林特插件](https://www.npmjs.com/package/stylelint-prettier)
+    -   用于Jest的ESLint插件。
 
 # 创建的配置文件
 
@@ -110,6 +128,15 @@ _如果您精通任何语言，并且想要帮助翻译自述文件或更正已�
       "trailingComma": (SET BY USER)
     }
 
+### stylelintrc（.js / .json）
+
+-   [更多信息](https://stylelint.io/user-guide/configure)
+
+
+    {
+      "extends": ["stylelint-prettier/recommended", "stylelint-config-airbnb"]
+    }
+
 ### .editorconfig
 
 -   [更多信息](https://editorconfig.org/#example-file)
@@ -128,4 +155,4 @@ _如果您精通任何语言，并且想要帮助翻译自述文件或更正已�
 
 * * *
 
-该脚本是由创建的[保罗·拉莫斯（Paulo Ramos）](https://github.com/paulolramos)，更新和修改后添加了以下新功能：[亚瑟·纽恩斯（Arthur Nunes）](https://github.com/otaldonunes),[马丁·杜波夫（Martin Dobrev）](https://github.com/RAMTO),[可视化](https://github.com/dr5hn),[受洗的正义](https://github.com/ImedAdel/)。并受到Jeffrey Zhen的启发[教程](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a).
+该脚本是由创建的[保罗·拉莫斯（Paulo Ramos）](https://github.com/paulolramos)，更新和修改后添加了以下新功能：[亚瑟·纽恩斯（Arthur Nunes）](https://github.com/otaldonunes),[马丁·杜波夫（Martin Dobrev）](https://github.com/RAMTO),[访问](https://github.com/dr5hn),[受洗的正义](https://github.com/ImedAdel/)。并受到Jeffrey Zhen的启发[教程](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a).
